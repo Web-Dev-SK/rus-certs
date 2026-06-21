@@ -70,7 +70,7 @@ cd .. && rm -fd ca_temp
 **Внимание!** Многие подобные инструкции советуют проверять сайты sberbаnk.ru, gosuslugi.ru и подобные. **Это не правильно!** Эти сайты подсовывают обычные сертификаты. Перед проверкой, откройте сайт в браузере и убедитесь, что его сертификат соответствует подписанному именно минцифры . В поле подписанта должно быть что-то вроде **Russian Trusted Sub CA**. \
 Пример проверки: запрос на сайт роскадастра при помощи openssl.
 ```bash
-openssl s\_client -connect ngw.fppd.cgkipd.ru:443 -showcerts < /dev/null | grep "Server cert"
+openssl s_client -connect ngw.fppd.cgkipd.ru:443 -showcerts < /dev/null | grep "Server cert"
 
 Connecting to 217.198.83.181\
 CONNECTED(00000003)\
